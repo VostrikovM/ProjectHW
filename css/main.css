@@ -1,0 +1,120 @@
+/* * {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 500px;
+    background-color: antiquewhite;
+    background-image: url("../images/middle-icon-dog.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding: 30px 20px;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+.card-title {
+    background-color: rgb(255, 98, 0);
+    text-transform: uppercase;
+    color: #fff;
+    width: 90%;
+    padding: 10px 0 10px 30px;
+    transform: translateX(-40px);
+    margin-bottom: 30px;
+}
+
+.card-form {
+    width: 70%;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 15px;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: aliceblue;
+    padding: 7px;
+    outline: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.card-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card-date label {
+    margin-bottom: 0;
+}
+
+.card-date__item {
+    width: 30%;
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 40px auto 0;
+}
+
+.message {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.message__person {
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.message__person-info {
+    text-align: right;
+}
+
+.message__text {
+    width: calc(100% - 400px);
+    padding: 20px;
+}
+
+.first-person .message__text {
+    background-color: rgb(197, 148, 243);
+    border-radius: 20px 20px 20px 0;
+}
+
+.second-person .message__text {
+    background-color: rgb(148, 232, 243);
+    border-radius: 20px 20px 0 20px;
+}
+
+.message.second-person,
+.second-person .message__person {
+    flex-direction: row-reverse;
+}
+
+.second-person .message__person-info {
+    text-align: left;
+}
+
+
